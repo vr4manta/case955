@@ -4,9 +4,9 @@ LABEL maintainer="PIVOT DevOps <ocio-eas-fema-pivot-devops@ocio.usda.gov>"
 
 ENV BUILD_LOGLEVEL="5"
 
-ARG http_proxy=http://10.76.225.15:80
-ARG https_proxy=http://10.76.225.15:80
-ARG ftp_proxy=http://10.76.225.15:80
+#ARG http_proxy=http://10.76.225.15:80
+#ARG https_proxy=http://10.76.225.15:80
+#ARG ftp_proxy=http://10.76.225.15:80
 ARG no_proxy=.edc.ds1.usda.gov,edc.usda.gov,fema.net,localhost
 
 LABEL com.redhat.component="jenkins-pivot-maven-agent" \
