@@ -1,12 +1,12 @@
 FROM registry.access.redhat.com/openshift3/jenkins-slave-base-rhel7
-ENV BUILD_LOGLEVEL="5" \
-    HTTP_PROXY="http://10.76.225.15:80" \
-    HTTPS_PROXY="http://10.76.225.15:80" \
-    NO_PROXY=".cluster.local,.edc.ds1.usda.gov,.edc.usda.gov,.fema.net,.svc,10.0.0.0/8,10.178.81.25,10.178.81.26,10.178.81.27,169.254.169.254,172.30.0.1,fmapivt0095.edc.ds1.usda.gov,fmapivt0096.edc.ds1.usda.gov,fmapivt0097.edc.ds1.usda.gov,fmapivt0098.edc.ds1.usda.gov,fmapivt0099.edc.ds1.usda.gov,fmapivt0100.edc.ds1.usda.gov,fmapivt0101.edc.ds1.usda.gov,fmapivt0102.edc.ds1.usda.gov,fmapivt0103.edc.ds1.usda.gov,fmapivt0104.edc.ds1.usda.gov,fmapivt0105.edc.ds1.usda.gov,fmapivt0106.edc.ds1.usda.gov,fmapivt0107.edc.ds1.usda.gov,pivot-ppd-oscp.fema.net" \
-    http_proxy="http://10.76.225.15:80" \
-    https_proxy="http://10.76.225.15:80" \
-    no_proxy=".cluster.local,.edc.ds1.usda.gov,.edc.usda.gov,.fema.net,.svc,10.0.0.0/8,10.178.81.25,10.178.81.26,10.178.81.27,169.254.169.254,172.30.0.1,fmapivt0095.edc.ds1.usda.gov,fmapivt0096.edc.ds1.usda.gov,fmapivt0097.edc.ds1.usda.gov,fmapivt0098.edc.ds1.usda.gov,fmapivt0099.edc.ds1.usda.gov,fmapivt0100.edc.ds1.usda.gov,fmapivt0101.edc.ds1.usda.gov,fmapivt0102.edc.ds1.usda.gov,fmapivt0103.edc.ds1.usda.gov,fmapivt0104.edc.ds1.usda.gov,fmapivt0105.edc.ds1.usda.gov,fmapivt0106.edc.ds1.usda.gov,fmapivt0107.edc.ds1.usda.gov,pivot-ppd-oscp.fema.net"
-LABEL maintainer "PIVOT DevOps <ocio-eas-fema-pivot-devops@ocio.usda.gov>"
+ENV BUILD_LOGLEVEL=5 \
+    HTTP_PROXY=http://10.76.225.15:80 \
+    HTTPS_PROXY=http://10.76.225.15:80 \
+    NO_PROXY=.cluster.local,.edc.ds1.usda.gov,.edc.usda.gov,.fema.net,.svc,10.0.0.0/8,10.178.81.25,10.178.81.26,10.178.81.27,169.254.169.254,172.30.0.1,fmapivt0095.edc.ds1.usda.gov,fmapivt0096.edc.ds1.usda.gov,fmapivt0097.edc.ds1.usda.gov,fmapivt0098.edc.ds1.usda.gov,fmapivt0099.edc.ds1.usda.gov,fmapivt0100.edc.ds1.usda.gov,fmapivt0101.edc.ds1.usda.gov,fmapivt0102.edc.ds1.usda.gov,fmapivt0103.edc.ds1.usda.gov,fmapivt0104.edc.ds1.usda.gov,fmapivt0105.edc.ds1.usda.gov,fmapivt0106.edc.ds1.usda.gov,fmapivt0107.edc.ds1.usda.gov,pivot-ppd-oscp.fema.net \
+    http_proxy=http://10.76.225.15:80 \
+    https_proxy=http://10.76.225.15:80 \
+    no_proxy=.cluster.local,.edc.ds1.usda.gov,.edc.usda.gov,.fema.net,.svc,10.0.0.0/8,10.178.81.25,10.178.81.26,10.178.81.27,169.254.169.254,172.30.0.1,fmapivt0095.edc.ds1.usda.gov,fmapivt0096.edc.ds1.usda.gov,fmapivt0097.edc.ds1.usda.gov,fmapivt0098.edc.ds1.usda.gov,fmapivt0099.edc.ds1.usda.gov,fmapivt0100.edc.ds1.usda.gov,fmapivt0101.edc.ds1.usda.gov,fmapivt0102.edc.ds1.usda.gov,fmapivt0103.edc.ds1.usda.gov,fmapivt0104.edc.ds1.usda.gov,fmapivt0105.edc.ds1.usda.gov,fmapivt0106.edc.ds1.usda.gov,fmapivt0107.edc.ds1.usda.gov,pivot-ppd-oscp.fema.net
+LABEL maintainer PIVOT DevOps <ocio-eas-fema-pivot-devops@ocio.usda.gov>
 ARG http_proxy=http://10.76.225.15:80 
 ARG https_proxy=http://10.76.225.15:80
 ARG ftp_proxy=http://10.76.225.15:80
